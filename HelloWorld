@@ -1,0 +1,6 @@
+import urllib
+thisurl = "http://www.mobiledokan.com/samsung/"
+handle = urllib.urlopen(thisurl)
+html_gunk =  handle.read()
+
+print(html_gunk[:150])
